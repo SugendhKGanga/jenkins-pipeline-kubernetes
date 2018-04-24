@@ -126,8 +126,8 @@ pipeline {
 /*
         string (name: 'DOCKER_REG',       defaultValue: 'docker-artifactory.my',                   description: 'Docker registry')
         string (name: 'DOCKER_TAG',       defaultValue: 'dev',                                     description: 'Docker tag')
-        string (name: 'DOCKER_USR',       defaultValue: 'admin',                                   description: 'Your helm repository user')
-        string (name: 'DOCKER_PSW',       defaultValue: 'password',                                description: 'Your helm repository password')
+        string (name: 'DOCKER_USR',       defaultValue: 'sugendh',                                   description: 'Your helm repository user')
+        string (name: 'DOCKER_PSW',       defaultValue: 'Password123',                                description: 'Your helm repository password')
         string (name: 'IMG_PULL_SECRET',  defaultValue: 'docker-reg-secret',                       description: 'The Kubernetes secret for the Docker registry (imagePullSecrets)')
         string (name: 'HELM_REPO',        defaultValue: 'https://artifactory.my/artifactory/helm', description: 'Your helm repository')
         string (name: 'HELM_USR',         defaultValue: 'admin',                                   description: 'Your helm repository user')
