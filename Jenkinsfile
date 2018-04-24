@@ -133,7 +133,7 @@ pipeline {
         string (name: 'IMG_PULL_SECRET',  defaultValue: 'docker-reg-secret',                       description: 'The Kubernetes secret for the Docker registry (imagePullSecrets)')
         string (name: 'HELM_REPO',        defaultValue: 'http://35.224.229.155/artifactory/helm-local', description: 'Your helm repository')
         string (name: 'HELM_USR',         defaultValue: 'admin',                                   description: 'Your helm repository user')
-        string (name: 'HELM_PSW',         defaultValue: 'password',                                description: 'Your helm repository password')
+        string (name: 'HELM_PSW',         defaultValue: 'AP8j5ZZuUam1u3zX',                                description: 'Your helm repository password')
 
     }
 
