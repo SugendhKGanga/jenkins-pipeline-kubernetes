@@ -56,7 +56,7 @@ dockerLogin () {
             errorExit "Docker credentials not set (DOCKER_USR and DOCKER_PSW)"
         fi
 
-        docker login ${DOCKER_REG} -u ${DOCKER_USR} -p ${DOCKER_PSW} || errorExit "Docker login to ${DOCKER_REG} failed"
+        docker login -u ${DOCKER_USR} -p ${DOCKER_PSW} || errorExit "Docker login to ${DOCKER_REG} failed"
     else
         echo "Docker registry not set. Skipping"
     fi
@@ -78,14 +78,14 @@ buildDockerImage () {
     rm -f ${BUILD_DIR}/site/*.org
 
     echo -e "\nBuilding Docker image"
-    docker build -t ${DOCKER_REG}/${DOCKER_REPO}:${DOCKER_TAG} ${BUILD_DIR} || errorExit "Building ${DOCKER_REPO}:${DOCKER_TAG} failed"
+    docker build -t ${DOCKER_REG_HUB}/${DOCKER_REPO}:${DOCKER_TAG} ${BUILD_DIR} || errorExit "Building ${DOCKER_REPO}:${DOCKER_TAG} failed"
 }
 
 # Push Docker images
 pushDockerImage () {
     echo -e "\nPushing ${DOCKER_REPO}:${DOCKER_TAG}"
 
-    docker push ${DOCKER_REG}/${DOCKER_REPO}:${DOCKER_TAG} || errorExit "Pushing ${DOCKER_REPO}:${DOCKER_TAG} failed"
+    docker push ${DOCKER_REG_HUB}/${DOCKER_REPO}:${DOCKER_TAG} || errorExit "Pushing ${DOCKER_REPO}:${DOCKER_TAG} failed"
 }
 
 # Packing the helm chart
