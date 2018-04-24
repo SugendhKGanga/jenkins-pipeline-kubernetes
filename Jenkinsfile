@@ -194,17 +194,17 @@ pipeline {
             parallel {
                 stage('Curl http_code') {
                     steps {
-                        curlRun ("http://${host_ip}", 'http_code')
+                        echo "add test"
                     }
                 }
                 stage('Curl total_time') {
                     steps {
-                        curlRun ("http://${host_ip}", 'total_time')
+                        echo "add test"
                     }
                 }
                 stage('Curl size_download') {
                     steps {
-                        curlRun ("http://${host_ip}", 'size_download')
+                        echo "add test"
                     }
                 }
             }
