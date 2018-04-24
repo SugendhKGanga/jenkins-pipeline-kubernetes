@@ -144,11 +144,8 @@ pipeline {
         ////////// Step 1 //////////
         stage('Git clone and setup') {
             steps {
-                echo "Check out acme code"
-                git branch: "master",
-                        credentialsId: 'eldada-bb',
-                        url: 'https://git.jfrog.info/scm/~eldada/acme-ci-cd.git'
-
+                echo "Check out acme code- testingggggggggggggggggg!"
+                
                 // Validate kubectl
                 sh "kubectl cluster-info"
 
