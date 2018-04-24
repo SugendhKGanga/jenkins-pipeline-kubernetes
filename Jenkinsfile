@@ -150,7 +150,7 @@ pipeline {
                 sh "kubectl cluster-info"
 
                 // Init helm client
-                sh "helm init"
+                sh "helm init --client-only"
 
                 // Load Docker registry and Helm repository configurations from file
                 load "${JENKINS_HOME}/parameters.groovy"
