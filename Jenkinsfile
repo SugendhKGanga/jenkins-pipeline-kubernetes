@@ -144,7 +144,7 @@ pipeline {
         ////////// Step 1 //////////
         stage('Git clone and setup') {
             steps {
-                echo "Check out acme code- testingggggggggggggggggg!"
+                echo "Check out the code!"
                 
                 // Validate kubectl
                 sh "kubectl cluster-info"
