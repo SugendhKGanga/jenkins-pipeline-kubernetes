@@ -125,6 +125,8 @@ pipeline {
         // The ${JENKINS_HOME}/parameters.groovy can be a mounted secrets file in your Jenkins container.
 
         string (name: 'DOCKER_REG',       defaultValue: 'docker-artifactory.my',                   description: 'Docker registry')
+        string (name: 'DOCKER_REG_HUB',       defaultValue: 'sugendh',                   description: 'Docker registry_hub')
+        
         string (name: 'DOCKER_TAG',       defaultValue: 'dev',                                     description: 'Docker tag')
         string (name: 'DOCKER_USR',       defaultValue: 'admin',                                   description: 'Your helm repository user')
         string (name: 'DOCKER_PSW',       defaultValue: 'password',                                description: 'Your helm repository password')
