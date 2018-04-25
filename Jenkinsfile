@@ -127,7 +127,7 @@ pipeline {
         string (name: 'DOCKER_REG',       defaultValue: 'Docker-Hub',                   description: 'Docker registry')
         string (name: 'DOCKER_REG_HUB',       defaultValue: 'sugendh',                   description: 'Docker registry_hub')
         
-        string (name: 'DOCKER_TAG',       defaultValue: 'dev',                                     description: 'Docker tag')
+        string (name: 'DOCKER_TAG',       defaultValue: 'latest',                                     description: 'Docker tag')
         string (name: 'DOCKER_USR',       defaultValue: 'sugendh',                                   description: 'Your helm repository user')
         string (name: 'DOCKER_PSW',       defaultValue: 'Password123',                                description: 'Your helm repository password')
         string (name: 'IMG_PULL_SECRET',  defaultValue: 'docker-reg-secret',                       description: 'The Kubernetes secret for the Docker registry (imagePullSecrets)')
