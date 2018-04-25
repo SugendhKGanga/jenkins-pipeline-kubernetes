@@ -109,7 +109,7 @@ pipeline {
 
     // Some global default variables
     environment {
-        IMAGE_NAME = 'acme'
+        IMAGE_NAME = 'nginx'
         TEST_LOCAL_PORT = 8817
         DEPLOY_PROD = false
         PARAMETERS_FILE = "${JENKINS_HOME}/parameters.groovy"
