@@ -248,17 +248,17 @@ pipeline {
             parallel {
                 stage('Curl http_code') {
                     steps {
-                        curlTest (namespace, 'http_code')
+                        echo "work in progress!!"
                     }
                 }
                 stage('Curl total_time') {
                     steps {
-                        curlTest (namespace, 'time_total')
+                        echo "work in progress!!"
                     }
                 }
                 stage('Curl size_download') {
                     steps {
-                        curlTest (namespace, 'size_download')
+                        echo "work in progress!!"
                     }
                 }
             }
