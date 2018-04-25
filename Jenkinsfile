@@ -297,7 +297,7 @@ pipeline {
        stage('Fail Here!') {
             steps {
                 echo "Thats all we have now! Its work in progress from here on! Failing..."
-                fail ho ja
+                helm hehe --faaail!
             }
        }
 
