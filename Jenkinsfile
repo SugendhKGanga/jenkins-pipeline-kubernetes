@@ -291,6 +291,13 @@ pipeline {
                 }
             }
         }
+        
+        //fail here!
+        
+       stage('Cleanup dev') {
+            steps {
+                echo "Thats all we have now! Its work in progress from here on! Failing..."
+                fail ho ja
 
         // Run the 3 tests on the deployed Kubernetes pod and service
         stage('Staging tests') {
