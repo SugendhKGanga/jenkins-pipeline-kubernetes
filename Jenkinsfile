@@ -315,15 +315,7 @@ pipeline {
             }
         }
 
-        
-         //fail here!
-        
-       stage('Fail Here!') {
-            steps {
-                echo "Thats all we have now! Its work in progress from here on! Failing..."
-                sh "fail ho ja!"
-            }
-       }
+       
         
         
         stage('Cleanup staging') {
