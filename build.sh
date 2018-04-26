@@ -8,7 +8,7 @@ DOCKER_REG=${DOCKER_REG:-dockerhub.io}
 DOCKER_USR=${DOCKER_USR:-admin}
 DOCKER_PSW=${DOCKER_PSW:-*****}
 
-DOCKER_REPO=${DOCKER_REPO:-myrepo}
+DOCKER_REPO=${DOCKER_REPO:-acme}
 DOCKER_TAG=${DOCKER_TAG:-dev}
 
 HELM_REPO=${HELM_REG:-http://35.224.229.155/artifactory/helm-local}
