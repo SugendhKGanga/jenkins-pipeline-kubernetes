@@ -194,7 +194,7 @@ pipeline {
             parallel {
                 stage('Curl http_code') {
                     steps {
-                        curlRun ("http://localhost", 'http_code')
+                        curlRun ("http://localhost:${TEST_LOCAL_PORT}", 'http_code')
                     }
                 }
                 stage('Curl total_time') {
